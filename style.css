@@ -1,0 +1,312 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  background: rgba(140, 196, 97, 1);
+}
+.container{
+  width: 800px;
+  display: table;
+  margin: auto;
+}
+.score-box{
+  max-width: 100%;
+  display: flex;
+  border-radius: 13px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  margin-top:60px;
+  align-items: center;
+  color:white;
+  padding: 20px;
+}
+.logo{
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  text-align: left;
+  margin-right: auto;
+}
+.scors{
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 9px;
+  color: rgba(101, 101, 101, 1);
+  width: 139px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  height: 128px;
+  padding: 10px 0px;
+  margin: 0px 20px;
+ }
+.mrgnright0{
+margin-right: 0px;
+}
+.forZero{color: rgba(37, 37, 37, 1);font-size: 68px;font-weight: 700;line-height: 79.69px;}
+.scors p{
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+#rock{
+  background-image: url("img/blue.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#scissior{
+   background-image: url("img/purple.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+.leftauto {
+  margin-left: auto;
+}
+#paper{
+  background-image: url("img/yellow.png");
+  background-repeat: no-repeat;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+}
+.topmargn{    margin-top: 79px;}
+
+.round1_top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.round2_top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  width: 650px;
+  margin: auto;
+}
+
+.round1 {
+  width: 400px;
+  margin: auto;
+  margin-top: 60px;
+}
+.round2{
+  max-width: 657px;
+  margin: auto;
+  margin-top: 60px;
+  width: 100%;
+}
+.youpic{width: 33%;display: flex;justify-content: center;flex-direction: column;align-items: center;}
+.verticleline{
+  width: 170px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.64);
+  position: absolute;
+}
+.slantinglineleft{
+  width: 183px;
+  background: rgba(0, 0, 0, 0.64);
+  height: 20px;
+  transform: rotate(57deg);
+  position: absolute;
+  left: 32px;
+  top: 28px;
+}
+.slantinglineright{
+  width: 199px;
+  background: rgba(0, 0, 0, 0.64);
+  height: 20px;
+  transform: rotate(120deg);
+  position: absolute;
+  top: 16px;
+  right: 21px;
+}
+.item{
+  width: 156px;
+  height: 156px;
+  flex-wrap: wrap;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footercta {
+  float: right;
+  padding: 20px;
+  position: relative;
+  margin-top: 60px;
+}
+.footercta button {
+  border: 2px solid #ffff;
+  background: rgba(217, 217, 217, 0);
+  color: #fff;
+  width: 119px;
+  border-radius: 10px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footercta .next {
+margin-left: 20px;
+}
+
+
+div#popup h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+div#popup ul li {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+  list-style: square;
+}
+div#popup {
+  width: 278px;
+  border-radius: 13px;
+  background: rgba(0, 68, 41, 1);
+  border: solid 7px rgba(255, 255, 255, 1);
+  list-style: none;
+  padding: 20px 30px;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  bottom: 80px;
+}
+
+div#popup ul li::marker {
+  color: rgba(255, 214, 0, 1);
+}
+div#popup .close{
+  position: absolute;
+  top: -45px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 79px;
+  letter-spacing: 0em;
+  text-align: left;
+  Width: 55px;
+  Height: 55px;
+  right: -24px;
+  text-decoration: none;
+  background: rgba(255, 0, 0, 1);
+  border: 5px solid rgba(255, 255, 255, 1);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.youwin{color: white;font-family: Roboto;font-size: 39px;font-weight: 800;line-height: 46px;/* padding-top: 44px; */text-align: center;/* justify-content: center; */}
+.again{
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+
+
+
+@keyframes fx-plyr-play-button {
+  0%{transform:scale(.5)}
+  100%{opacity:0}
+  }
+
+.video-btn .circle:before{animation:fx-plyr-play-button 2s ease-out infinite;border: 36px solid #2E9A2563;border-radius:200%;box-shadow:0 0 5px rgba(0,0,0,.3);box-sizing:border-box;content:"";height:200%;left:-50%;position:absolute;top:-50%;width:200%;background: #2E9A2563;}
+.video-btn .circle .youtube-icons{border-color:transparent transparent transparent #1870D5;border-style:solid;border-width:10.5px 0 10.5px 20px;display:block;height:0;margin:18px auto 0 21px;top:5px;width:0}
+.video-img .video-btn{width:100%;text-align:center;margin:auto;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+.video-img .video-btn .circle{border:2px solid #1870D5;border-radius:50%;display:inline-block;height:59px;line-height:50px;margin:0 auto;transition:all .3s ease-in 0;width:60px;position:relative}
+.round2_top p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.trophy {
+  background: url(img/stars.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding-top: 102px;
+}
+
+.winner {
+  width: 504px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.wintext {
+  font-family: Roboto;
+  font-size: 91px;
+  font-weight: 600;
+  line-height: 107px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+.winMsg {
+  font-family: Roboto;
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+}
+button.PlayBtn {
+  width: 174px;
+  height: 44px;
+  border-radius: 9px;
+  color: #FFFFFF;
+  border: 0px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #6B6B6B;
+  margin-top: 20px;
+}
+.middletext {
+  margin: auto;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone,Paper,Sessor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+      <div class="header">
+       
+        <div class="score-box">
+            <div class="logo">
+                <p>ROCK</p>
+                <p>PAPER</p>
+                <p>SCISSORS</p>
+            </div>
+            <div class="scors">
+            <div class="computer-score">
+                <p>COMPUTER</p>
+                <p>SCORE</p>
+                <div class="compScore forZero">0</div>
+            </div>
+          </div>
+            <div class="scors mrgnright0">
+            <div class="your-score">
+                <p>YOUR</p>
+                <p>SCORE</p>
+                <div class="yourScore forZero">0</div>
+                </div>
+                
+            </div>
+            </div> 
+            
+            <div class="round2">
+                
+                <div class="round2_top">
+                    <div class="youpic">
+                        <p>YOU PICKED</p>
+                        <div class="">
+                        <div class=" video-play-button item" id="scissior">
+                          <span class="video-btn">
+                            <span class="circle">
+                                <img src="./img/scissior.png">
+                            </span>
+                        </span>
+                          </div>
+
+                         
+                        </div>
+                </div>
+                  <div class="middletext">
+                    <h2 class="youwin">YOU WIN</h2>
+                    <h3 class="again">AGAINST PC</h3>
+                    <button class="PlayBtn">PLAY AGAIN</button>
+                  </div>
+                  <div class="leftauto">
+                    <p>PC PICKED</p>
+                    <div class="item " id="paper">
+                        <img src="img/paper.png"/>
+                      </div>
+                </div>
+                  </div>
+                  
+              </div>
+      
+   
+     
+
+    </div>
+    
+</div>
+<div class="footercta">
+
+  
+  <div class="popup" id="popup">
+    <h2>Game Rules</h2>
+    <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+        <li>If both players lay down the same hand, each player lays down another hand</li>
+      </ul>
+      <a href="#"class="close" onclick="hide('popup')">X</a>
+
+  </div>
+  <button class="button" href="#" onclick="show('popup')">Rules</button>
+
+  <button class="button next" href="#" id="next">NEXT</button>
+  
+</div>
+
+</body>
+</html>
